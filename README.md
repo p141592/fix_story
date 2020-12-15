@@ -23,8 +23,10 @@
 
 Решение:
 
-`pkg-config zlib --libs`
-`export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/Cellar/zlib/1.2.11/lib/pkgconfig/`
+```
+pkg-config zlib --libs
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/Cellar/zlib/1.2.11/lib/pkgconfig/
+```
 
 # Установка psycopg2-binary
 
