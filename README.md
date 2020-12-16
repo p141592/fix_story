@@ -68,6 +68,10 @@ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/Cellar/zlib/1.2.11/lib/pkgcon
 Решение:
 
 ```
+Использую python ниже 3.8
+https://github.com/psycopg/psycopg2/issues/854#issuecomment-611791946
 
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 ```
 
