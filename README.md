@@ -75,3 +75,15 @@ export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 ```
 
+# Проблема с сертификатами на macos
+
+```
+urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:997)>
+```
+
+Решение:
+```
+> cd "/Applications/Python 3.10/" # Или ваша версия 
+> sudo "./Install Certificates.command"
+```
+
